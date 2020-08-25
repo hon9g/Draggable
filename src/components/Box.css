@@ -1,0 +1,12 @@
+.box {
+  border: 1px solid #FFF;
+  width: 100px;
+  height: 100px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box .title {
+  user-select: none;
+}

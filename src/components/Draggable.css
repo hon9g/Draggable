@@ -1,0 +1,5 @@
+.draggable {
+  display: inline-block;
+  position: relative;
+  transition: transform 100ms;
+}
