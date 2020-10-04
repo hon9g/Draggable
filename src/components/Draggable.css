@@ -1,5 +1,9 @@
 .draggable {
   display: inline-block;
   position: relative;
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  -o-transition: transform 100ms;
   transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
 }
