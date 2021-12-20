@@ -27,5 +27,8 @@ module.exports = {
     ],
     stats: {
         children: true,
+    },
+    performance: {
+        hints: false,
     }
 };
