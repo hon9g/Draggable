@@ -23,7 +23,7 @@ module.exports = {
         ],
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: "./dist/index.html" })
+        new HtmlWebpackPlugin({ template: "./src/index.html" })
     ],
     stats: {
         children: true,
