@@ -17,14 +17,14 @@ git clone https://github.com/hon9g/Draggable.git
 npm i
 ```
 
-## Run Development server
+## Run a development server
 1. Run it as development mode.
 ```
 npm run dev
 ```
 2. You can access the web page with Draggable Component at `http://localhost:8080/`
 
-## Run Production server
+## Run a production server
 1. Build it.
 ```
 npm run build
