@@ -9,6 +9,7 @@
   "scripts": {
     "start": "webpack serve --mode production",
     "build": "webpack build",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development"
   },
   "eslintConfig": {
