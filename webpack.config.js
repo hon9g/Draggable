@@ -1,12 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const config = {
     entry: {
         'js/index': [`${path.join(__dirname, 'src')}/index.js`],
     },
     output: {
-        path: path.resolve(__dirname, 'dist/'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: "/",
     },
     module: {
@@ -32,3 +32,12 @@ module.exports = {
         hints: false,
     }
 };
+
+module.exports = (_, argv) => {
+    if (argv.mode === 'production') {
+      config.output.publicPath = "/Draggable/";
+    }
+
+    return config;
+  };
+  
