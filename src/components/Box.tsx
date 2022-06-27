@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Box.css'
 
-
 const Box = ({ title }) => {
   return (
   <div className={`box`}>
