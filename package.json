@@ -12,7 +12,7 @@
     "build": "webpack build",
     "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development",
-    "test:tsc": "tsc -p tsconfig.test.json -w"
+    "test:tsc": "tsc -p tsconfig.test.json -w --noEmit "
   },
   "eslintConfig": {
     "extends": "react-app"
