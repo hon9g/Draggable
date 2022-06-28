@@ -11,7 +11,8 @@
     "start": "webpack serve --mode production",
     "build": "webpack build",
     "deploy": "gh-pages -d dist",
-    "dev": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "test:tsc": "tsc -p tsconfig.test.json -w"
   },
   "eslintConfig": {
     "extends": "react-app"
