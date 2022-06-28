@@ -1,10 +1,13 @@
-import React, { useCallback, useEffect, useRef, useMemo, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useMemo, useState, ReactElement, ReactNode } from 'react'
 import PropTypes from 'prop-types'
 
 import './Draggable.css'
 
+interface Props {
+  children: ReactNode
+}
 
-const Draggable = ({ children }) => {
+const Draggable = ({ children }: Props) => {
   const draggableElement = useRef();
 
   const [state, setState] = useState({
