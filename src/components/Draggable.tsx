@@ -107,11 +107,11 @@ const Draggable = ({ children }: Props) => {
       cursor: state.isDragging ? '-webkit-grabbing' : '-webkit-grab',
       transform: `translate(
         ${Math.min(
-          window.innerWidth - (el ? el.clientWidth : 0),
+          window.innerWidth - (el?.clientWidth ?? 0),
           Math.max(state.translate.x, 0)
         )}px,
         ${Math.min(
-          window.innerHeight - (el ? el.clientHeight : 0),
+          window.innerHeight - (el?.clientHeight ?? 0),
           Math.max(state.translate.y, 0)
         )}px)
       `,
