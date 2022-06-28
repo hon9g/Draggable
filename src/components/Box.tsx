@@ -2,7 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Box.css'
 
-const Box = ({ title }) => {
+interface Props {
+  title: String
+}
+
+const Box = ({ title }: Props) => {
   return (
   <div className={`box`}>
     <span className={`title`}>
