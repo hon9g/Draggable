@@ -2,9 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-    entry: {
-        'js/index': [`${path.join(__dirname, 'src')}/index.js`],
-    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: "/",
