@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useMemo, useState, ReactElement, ReactNode } from 'react'
+import React, { useCallback, useEffect, useRef, useMemo, useState, ReactNode } from 'react'
 import PropTypes from 'prop-types'
 
 import './Draggable.css'
@@ -16,7 +16,7 @@ const Draggable = ({ children }: Props) => {
     isDragging: false
   })
   
-  const handleDesktopDragStart = useCallback(({clientX, clientY}) => {
+  const handleDesktopDragStart = useCallback(({clientX, clientY}: React.MouseEvent<HTMLDivElement>) => {
     const el = draggableElement.current
     if (el) {
       setState(state => ({
@@ -30,7 +30,8 @@ const Draggable = ({ children }: Props) => {
     }
   }, [])
 
-  const handleMobileDragStart = useCallback(({touches}) => {
+  const handleMobileDragStart = useCallback(({touches}: React.TouchEvent<HTMLDivElement>) => {
+    console.log(touches)
     const el = draggableElement.current
     if (el) {
       setState(state => ({
@@ -44,7 +45,7 @@ const Draggable = ({ children }: Props) => {
     }
   }, [])
   
-  const handleDesktopDragging = useCallback(({clientX, clientY}) => {
+  const handleDesktopDragging = useCallback(({clientX, clientY}: MouseEvent) => {
     const el = draggableElement.current
     if (el) {
       const translateX = Math.min(
@@ -62,7 +63,7 @@ const Draggable = ({ children }: Props) => {
     }
   }, [state.pad])
 
-  const handleMobileDragging = useCallback(({touches}) => {
+  const handleMobileDragging = useCallback(({touches}: TouchEvent) => {
     const el = draggableElement.current
     if (el) {
       const translateX = Math.min(
