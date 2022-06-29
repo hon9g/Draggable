@@ -6,4 +6,7 @@
         "src/**/*.test.ts",
         "src/**/*.test.tsx",
     ],
+    "compilerOptions": {
+        "noEmit": true,
+    }
 }
