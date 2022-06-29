@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "webpack serve --mode production",
-    "build": "webpack build",
+    "build": "webpack build --mode production",
     "deploy": "gh-pages -d dist",
     "dev": "webpack-dev-server --mode development",
     "test:tsc": "tsc -p tsconfig.test.json -w"
