@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Box from './components/Box.jsx'
-import Draggable from './components/Draggable.jsx'
+import Box from './components/Box'
+import Draggable from './components/Draggable'
 
 const App = () => {
   return (
