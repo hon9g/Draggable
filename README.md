@@ -1,13 +1,12 @@
 # Draggable Component
 Draggable component with React Hooks.
 
-<img src="https://raw.githubusercontent.com/hon9g/Draggable/master/assets/progress1.gif" width="400"/>
+https://user-images.githubusercontent.com/26381972/196594586-b8cac05b-715c-406e-95d6-51ce3e35c3f7.mov
+
 
 - ✨ Draggable React components available! It makes its child element draggable.
 - 👌 Checked Proptypes for components.
 - 📌 Functional components with Hooks.
-
-Demo site is published at [here](https://hon9g.github.io/Draggable/).
 
 ## Installation
 1. Clone the repository
